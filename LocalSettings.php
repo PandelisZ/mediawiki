@@ -118,7 +118,23 @@ $wgDiff3 = "/usr/bin/diff3";
 
 ## Default skin: you can change the default skin. Use the internal symbolic
 ## names, ie 'vector', 'monobook':
-$wgDefaultSkin = "vector";
+wfLoadSkin( 'foreground' );
+$wgDefaultSkin = "foreground";
+
+$wgForegroundFeatures = array(
+	'showActionsForAnon' => true,
+	'NavWrapperType' => 'divonly',
+	'showHelpUnderTools' => true,
+	'showRecentChangesUnderTools' => true,
+	'enableTabs' => false,
+	'wikiName' => &$GLOBALS['wgSitename'],
+	'navbarIcon' => false,
+	'IeEdgeCode' => 1,
+	'showFooterIcons' => false,
+	'addThisPUBID' => '',
+	'useAddThisShare' => '',
+	'useAddThisFollow' => ''
+  );
 
 # End of automatically generated settings.
 # Add more configuration options below.
