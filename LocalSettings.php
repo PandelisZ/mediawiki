@@ -123,3 +123,18 @@ $wgDefaultSkin = "vector";
 # End of automatically generated settings.
 # Add more configuration options below.
 
+
+wfLoadExtension( 'AWS' );
+
+// Configure AWS credentials.
+// THIS IS NOT NEEDED if your EC2 instance has an IAM instance profile.
+$wgAWSCredentials = [
+	'key' => getenv("AWS_ACCESS_KEY"),
+	'secret' => getenv("AWS_SECRET_KEY"),
+	'token' => false
+];
+
+$wgAWSRegion = 'eu-west-1'; # Northern Virginia
+
+// Replace <something> with the name of your S3 bucket, e.g. wonderfulbali234.
+$wgAWSBucketName = "archivewiki";
