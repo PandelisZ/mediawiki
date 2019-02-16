@@ -17,6 +17,7 @@
 		"wiki": "https://www.mediawiki.org/"
 	},
 	"require": {
+		"aws/aws-sdk-php": "^3.67",
 		"composer/semver": "1.4.2",
 		"cssjanus/cssjanus": "1.2.1",
 		"ext-ctype": "*",
