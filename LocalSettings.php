@@ -155,3 +155,5 @@ $wgAWSRegion = 'eu-west-1'; # Northern Virginia
 
 // Replace <something> with the name of your S3 bucket, e.g. wonderfulbali234.
 $wgAWSBucketName = "archivewiki";
+
+$wgPHPSessionHandling = 'disable';
