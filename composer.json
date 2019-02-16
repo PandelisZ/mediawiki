@@ -17,6 +17,7 @@
 		"wiki": "https://www.mediawiki.org/"
 	},
 	"require": {
+		"mediawiki/vector-skin": "1.32.0-rc.2",
 		"aws/aws-sdk-php": "^3.67",
 		"composer/semver": "1.4.2",
 		"cssjanus/cssjanus": "1.2.1",

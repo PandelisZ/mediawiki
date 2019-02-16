@@ -118,8 +118,9 @@ $wgDiff3 = "/usr/bin/diff3";
 
 ## Default skin: you can change the default skin. Use the internal symbolic
 ## names, ie 'vector', 'monobook':
-wfLoadSkin( 'foreground' );
-$wgDefaultSkin = "foreground";
+// wfLoadSkin( 'foreground' );
+wfLoadSkin( 'Vector' );
+$wgDefaultSkin = "vector";
 
 $wgForegroundFeatures = array(
 	'showActionsForAnon' => true,
